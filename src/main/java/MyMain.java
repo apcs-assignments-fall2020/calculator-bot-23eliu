@@ -28,12 +28,16 @@ public class MyMain {
     }
 
     public static void main(String[] args) {
-        // You may want to keep these lines of code to test that your methods work
-        System.out.println(median(1, 2, 3)); // should be 2
-        System.out.println(magnitude(-7, -1)); // should be -7
-        System.out.println(pythagoras(3, 4)); // should be 5.0
-
+        System.out.println("What method would you like to use?");
         Scanner scan = new Scanner(System.in);
-        
+        if (scan.next().equals("median")) {
+            System.out.println(median(1, 2, 3));
+        }
+        if (scan.next().equals("magnitude")) {
+            System.out.println(magnitude(-7, -1));
+        }
+        if (scan.next().equals("pythagoras")) {
+            System.out.println(pythagoras(3, 4));
+        }
     }
 }
